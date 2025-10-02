@@ -21,7 +21,7 @@ public class EVA2_2_SWITCH {
         int opc;
         System.out.println("1.consultar saldo");
         System.out.println("2.retirar saldo");
-        System.out.println("1.depositar saldo");
+        System.out.println("3.depositar saldo");
         System.out.println("selecciona una opción del menú");
         opc = captu.nextInt();
         switch (opc){//valor unico para usar switch
@@ -44,3 +44,4 @@ public class EVA2_2_SWITCH {
     }
     
 }
+        
