@@ -26,7 +26,7 @@ public class EVA2_1_EXA1 {
         if(pin == 1234){//primera parte resuelta
             System.out.println("1.consultar saldo");
             System.out.println("2.retirar saldo");
-            System.out.println("1.depositar saldo");
+            System.out.println("3.depositar saldo");
             System.out.println("selecciona la operación");
             opc = captu.nextInt();
             if(opc == 1){
@@ -37,7 +37,7 @@ public class EVA2_1_EXA1 {
                 monto = captu.nextInt();
                 if (monto <= saldo){
                     calculo = saldo - monto;
-                    System.out.println(" Tu saldo es + calculo");
+                    System.out.println(" Tu saldo es" + calculo);
                 }else{
                     System.out.println("Monto mayor al saldo!!");
               
@@ -47,7 +47,7 @@ public class EVA2_1_EXA1 {
                 monto = captu.nextInt();
                 if (monto >= 0){
                     calculo = saldo + monto;
-                    System.out.println("Tu saldo es + calculo");
+                    System.out.println("Tu saldo es" + calculo);
                 }else{
                     System.out.println("Monto negativo!!");
                 }
@@ -63,3 +63,4 @@ public class EVA2_1_EXA1 {
     }
     
 }
+
