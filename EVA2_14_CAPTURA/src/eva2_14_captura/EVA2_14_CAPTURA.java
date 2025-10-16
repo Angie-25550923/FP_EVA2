@@ -23,13 +23,28 @@ public class EVA2_14_CAPTURA {
         tama = captu.nextInt();
         //creame un arreglo segun lo capturado
         int califas [] = new int[tama];
+        //CAPTURAR
         for(int i = 0; i < califas.length; i++){
             System.out.println("calificación" + (i + 1) + ":");
-            califas [1] = captu.nextInt();   
+            califas [i] = captu.nextInt();   
         }
+        //LEER
         for(int i = 0; i < califas.length; i++){
             System.out.println("[" + califas[i] + "]");
+         
         }
+        int suma = 0;
+        //sumar todas las calificaciones
+        for(int i = 0; i < califas.length; i++){
+            suma = suma + califas[i];
+            
+        }//converción
+        double promedio = suma / (double)tama; //dividiendo enteros
+        System.out.println("Promedio = " + promedio);
+        //????????????????
+                     
+        
+        
         
         
     }
