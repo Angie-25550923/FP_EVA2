@@ -18,12 +18,13 @@ public class EVA2_17_ALCANCE {
         int i = 5;
         {
         int valor = 100;
-        System.out.println("");
+        System.out.println("valor");
         }
-        System.out.println("");
-        
-        
-    }
+        System.out.println("valor");//es la variable ya no existe aqui, es por eso el error
     }
     
+}
+
+    
+
 
