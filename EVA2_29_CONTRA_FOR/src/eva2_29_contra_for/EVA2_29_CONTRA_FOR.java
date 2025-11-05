@@ -11,29 +11,30 @@ import java.util.Scanner;
  * @author Angie
  */
 public class EVA2_29_CONTRA_FOR {
-    
+
     final static String USUARIO = "admin";
     final static String PWD = "admin";
     
     public static void main(String[] args) {
-        // TODO code application logic here
         //1.PEDIMOS DATOS DE ACCESO
         Scanner captu = new Scanner(System.in);
         String usu, contra;
-        //2.VALIDAMOS
-        //INCORRECTO -----> VOLVER A PREGUNTAR
-        //CORRECTO ---> ACCESO AL SISTEMAS
-        do{
+        
         System.out.println("Usuario");
         usu = captu.nextLine();
-        System.out.println("Contraseña");
-        contra = captu.nextLine();
-        }while(!(usu.equals(USUARIO) && contra.equals(PWD)));
-        System.out.println("ACCESO CONCEDIDO. BIENVENIDO AL SISTEMA!");
         
-    
-      }
+        for (int i = 1; i <= 4; i++) {
+            System.out.println("Contraseña: ");
+            contra = captu.nextLine();
+            if (contra.equals(PWD)) {
+            System.out.println("ACCESO CONCEDIDO");
+            break;
         
+        } else {
+            System.out.println("Contraseña incorrecta. Intentos restantes: " + (4 - i));
+                }
+            }
+        }
     }
 
         
